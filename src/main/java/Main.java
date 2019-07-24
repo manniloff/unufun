@@ -1,3 +1,5 @@
+import java.security.NoSuchAlgorithmException;
+
 /**
  * Class Main is responsible for start all needed classes
  * <p>
@@ -14,7 +16,7 @@
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchAlgorithmException {
 
         //Call and work with InputData
         InputData inputData = new InputData();

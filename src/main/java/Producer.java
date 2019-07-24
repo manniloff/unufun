@@ -1,3 +1,5 @@
+import java.security.NoSuchAlgorithmException;
+
 /**
  * Producer is a class which responsible about behavior of all
  * threads of this class.
@@ -10,9 +12,6 @@ public class Producer implements Runnable {
     private Store store;
     private EndProgram endProgram = new EndProgram();
 
-    /**
-     * @param store
-     */
     Producer(Store store) {
         this.store = store;
     }
@@ -31,7 +30,9 @@ public class Producer implements Runnable {
                     store.add();
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
-                    e.printStackTrace();
+                    System.out.println("Throws an exception: "+e);
+                } catch (NoSuchAlgorithmException e) {
+                    System.out.println("Throws an exception: "+e);
                 }
             }
         }

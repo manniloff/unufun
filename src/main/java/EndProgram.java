@@ -1,6 +1,6 @@
-/**
+/*
 * Class which catch from keyboard button 'q' and stop producers
- */
+*/
 import java.util.Scanner;
 
 public class EndProgram implements Runnable {

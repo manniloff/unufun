@@ -1,3 +1,5 @@
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.util.Random;
 
 /**
@@ -20,8 +22,8 @@ public enum CarType {
     COUPE,
     CONVERTIBLE;
 
-    public static CarType getRandomType() {
-        Random random = new Random();
+    public static CarType getRandomType() throws NoSuchAlgorithmException {
+        Random random = SecureRandom.getInstanceStrong();
         return values()[random.nextInt(values().length)];
     }
 }

@@ -24,7 +24,7 @@ public class Consumer implements Runnable {
                     store.poll();
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
-                    System.out.println(e);
+                    System.out.println("Throws an exception: "+e);
                 }
             }
         }

@@ -4,16 +4,16 @@
  */
 
 public interface ICar {
-    public CarModel getCarModel();
+    CarModel getCarModel();
 
-    public void setCarModel(CarModel carModel);
+    void setCarModel(CarModel carModel);
 
-    public CarType getCarType();
+    CarType getCarType();
 
-    public void setCarType(CarType carType);
+    void setCarType(CarType carType);
 
-    public int getCarSpeed();
+    int getCarSpeed();
 
-    public void setCarSpeed(int carSpeed);
+    void setCarSpeed(int carSpeed);
 
 }

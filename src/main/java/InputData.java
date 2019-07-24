@@ -15,8 +15,8 @@ class InputData {
     static int bottomLayer;
     static int storeStoke;
     Scanner scanner = new Scanner(System.in);
-    List<Thread> consumers = new ArrayList<Thread>();
-    List<Thread> producers = new ArrayList<Thread>();
+    List<Thread> consumers = new ArrayList<>();
+    List<Thread> producers = new ArrayList<>();
     Store store = new Store();
 
     InputData() {
@@ -72,9 +72,9 @@ class InputData {
     private void insertLowerLayer() {
         System.out.println("Insert lower layer:");
         bottomLayer = scanner.nextInt();
-        if(bottomLayer>=topLayer){
+        if (bottomLayer >= topLayer) {
             System.out.println("Bottom layer can't be more then top layer,Insert lower layer again:");
-            bottomLayer=scanner.nextInt();
+            bottomLayer = scanner.nextInt();
         }
 
     }
